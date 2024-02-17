@@ -1,4 +1,4 @@
-# Objective: In this game, there is a list of words present, out of which our interpreter will choose 1 random word. 
+# In this game, there is a list of words present, out of which our interpreter will choose 1 random word. 
 # The user first has to input their names and then, will be asked to guess any alphabet. 
 # If the random word contains that alphabet, it will be shown as the output(with correct placement) else the program will ask you to guess another alphabet. 
 # The user will be given 12 turns(which can be changed accordingly) to guess the complete word.
@@ -9,7 +9,9 @@ import random as rn
 name = input("What is your name? ")
 print("Good luck! {} ".format(name))
 
-word_list = ['programming']
+word_list = ['rainbow', 'computer', 'science', 'programming',
+            'python', 'mathematics', 'player', 'condition',
+            'reverse', 'water', 'board', 'geeks']
 word_rand = rn.choice(word_list)
 word_copy = word_rand
 temp = "_"
