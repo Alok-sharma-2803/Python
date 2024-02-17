@@ -15,7 +15,7 @@ input_num = range_min - 1
 
 while(input_num != rand_num):
     
-    guess_count = guess_count + 1
+    guess_count += 1
     if(guess_count > guess_max):
         print("Better Luck Next Time!\n")
         break
