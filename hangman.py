@@ -16,7 +16,9 @@
 import random as rn
 
 hangman = "HANGMAN"
-word_list = ['sample', 'alphabet', 'geeks']
+txt = "Apple Banana Guava Grapes Pineapple Papaya"
+word_list = txt.lower().split(" ")
+
 word_rand = rn.choice(word_list)
 word_copy = word_rand
 wrong_guess = 0
@@ -35,7 +37,7 @@ while(1 == 1):
         print("You Win!")
         break
     
-    print(hangman)
+    print("\n" + hangman)
     print(guess)
     input_usr = input("Guess an alphabet: ").lower()
 
